@@ -43,6 +43,12 @@ name = "Security"
         type = "boolean"
         default = true
 
+        [security.ssh.ssh_allow_root_on_localnet]
+        type = "boolean"
+        default = true
+        yes = "true"
+        no = "false"
+
     [security.nginx]
     name = "NGINX (web server)"
         [security.nginx.nginx_redirect_to_https]
